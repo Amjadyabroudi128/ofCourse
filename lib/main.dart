@@ -10,64 +10,42 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-        ),
-      ),
-      home: const MyHomePage(title: 'OfCourse'),
       debugShowCheckedModeBanner: false,
+      home: const BottomNavbar(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+class BottomNavbar extends StatefulWidget {
+  const BottomNavbar({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<BottomNavbar> createState() => _BottomNavbarState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _BottomNavbarState extends State<BottomNavbar> {
   int selectedIndex = 0;
-
-  final List<String> pages = [
-    "Home Page",
-    "Search Page",
-    "Profile Page",
-  ];
-
   @override
   Widget build(BuildContext context) {
+    final List<Widget> pages = [
+      const HomePage(),
+      const SearchPage(),
+      const ProfilePage(),
+    ];
+
+    void onItemTapped(int index) {
+      setState(() {
+        selectedIndex = index;
+      });
+    }
+
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              pages[selectedIndex],
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
+        child: pages.elementAt(selectedIndex),
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
-
-        onTap: (index) {
-          setState(() {
-            selectedIndex = index;
-          });
-        },
-
+        onTap: onItemTapped,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -84,6 +62,48 @@ class _MyHomePageState extends State<MyHomePage> {
             label: "Profile",
           ),
         ],
+      ),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        "Home Page",
+        style: TextStyle(fontSize: 30),
+      ),
+    );
+  }
+}
+
+class SearchPage extends StatelessWidget {
+  const SearchPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        "Search Page",
+        style: TextStyle(fontSize: 30),
+      ),
+    );
+  }
+}
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        "Profile Page",
+        style: TextStyle(fontSize: 30),
       ),
     );
   }
