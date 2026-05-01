@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'ProfilePage/ProfilePage.dart';
 import 'SearchPage/SearchPage.dart';
 
 void main() {
@@ -83,17 +84,3 @@ class HomePage extends StatelessWidget {
   }
 }
 
-
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "Profile Page",
-        style: TextStyle(fontSize: 30),
-      ),
-    );
-  }
-}
