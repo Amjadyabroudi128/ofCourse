@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ofcourse/core/appIcons.dart';
 
 import 'ProfilePage/ProfilePage.dart';
 import 'SearchPage/SearchPage.dart';
@@ -49,19 +50,19 @@ class _BottomNavbarState extends State<BottomNavbar> {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         onTap: onItemTapped,
-        items: const [
-          BottomNavigationBarItem(
+        items: [
+          const BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: "Home",
           ),
 
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: "Search",
           ),
 
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: myIcons.profile,
             label: "Profile",
           ),
         ],
