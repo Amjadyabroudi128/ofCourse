@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("Of Course", style: TextStyle(color: myColors.ofCourse),),
-            Icon(Icons.notifications)
+            myIcons.notis
           ],
         ),
       ),
