@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[350],
+        backgroundColor: myColors.appBar,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
