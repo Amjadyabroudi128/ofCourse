@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ofcourse/core/appIcons.dart';
+import 'package:ofcourse/core/colors.dart';
 
 import 'ProfilePage/ProfilePage.dart';
 import 'SearchPage/SearchPage.dart';
@@ -82,7 +83,7 @@ class HomePage extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Of Course", style: TextStyle(color: Colors.blueAccent),),
+            Text("Of Course", style: TextStyle(color: myColors.ofCourse),),
             Icon(Icons.notifications)
           ],
         ),
