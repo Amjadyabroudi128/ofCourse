@@ -14,7 +14,7 @@ class ProfilePage extends StatelessWidget {
         title: Text("Profile"),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 10),
+            padding: const .only(right: 10),
             child: myIcons.myList
           ),
         ],
