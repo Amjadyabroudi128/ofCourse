@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ofcourse/core/appIcons.dart';
 import 'package:ofcourse/core/colors.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -14,7 +15,7 @@ class ProfilePage extends StatelessWidget {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10),
-            child: Icon(Icons.list, size: 30,),
+            child: myIcons.myList
           ),
         ],
       ),
