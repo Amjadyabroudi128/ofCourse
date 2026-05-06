@@ -19,6 +19,26 @@ class ProfilePage extends StatelessWidget {
           ),
         ],
       ),
+      body: Center(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: .start,
+            children: [
+              Text("CV"),
+              Card(
+                child: Row(
+                  children: [
+                    TextButton(
+                      onPressed: (){},
+                      child: Text("Upload CV"),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
