@@ -9,13 +9,13 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: myColors.appBar,
+        backgroundColor: MyColors.appBar,
         centerTitle: true,
         title: Text("Profile"),
         actions: [
           Padding(
             padding: const .only(right: 10),
-            child: myIcons.myList
+            child: MyIcons.myList
           ),
         ],
       ),
@@ -24,7 +24,10 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: .start,
             children: [
-              Text("CV"),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text("CV"),
+              ),
               Card(
                 child: Row(
                   children: [
