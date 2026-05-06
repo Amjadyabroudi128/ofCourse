@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ofcourse/core/appIcons.dart';
 import 'package:ofcourse/core/colors.dart';
-import 'package:ofcourse/core/testStyles.dart';
+import 'package:ofcourse/core/textstyles.dart';
 
-import 'ProfilePage/ProfilePage.dart';
+import 'ProfilePage/profilepage.dart';
 import 'SearchPage/SearchPage.dart';
 
 void main() {
@@ -54,17 +54,17 @@ class _BottomNavbarState extends State<BottomNavbar> {
         onTap: onItemTapped,
         items: [
            BottomNavigationBarItem(
-            icon: myIcons.home,
+            icon: MyIcons.home,
             label: "Home",
           ),
 
            BottomNavigationBarItem(
-            icon: myIcons.search,
+            icon: MyIcons.search,
             label: "Search",
           ),
 
           BottomNavigationBarItem(
-            icon: myIcons.profile,
+            icon: MyIcons.profile,
             label: "Profile",
           ),
         ],
@@ -80,12 +80,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        backgroundColor: myColors.appBar,
+        backgroundColor: MyColors.appBar,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text("Of Course", style: MyStyles.ofCourse,),
-            myIcons.notis
+            MyIcons.notis
           ],
         ),
       ),
