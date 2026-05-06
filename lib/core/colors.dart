@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
- class myColors {
+ class MyColors {
    static Color ofCourse = Colors.blueAccent;
    static Color? appBar = Colors.grey[350];
  }
