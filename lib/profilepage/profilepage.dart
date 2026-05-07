@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ofcourse/components/card.dart';
 import 'package:ofcourse/core/appIcons.dart';
 import 'package:ofcourse/core/colors.dart';
 
@@ -30,7 +31,7 @@ class ProfilePage extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Card(
+                child: MyCard(
                   child: Row(
                     children: [
                       TextButton(
