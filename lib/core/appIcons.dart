@@ -7,4 +7,5 @@ import 'package:flutter/material.dart';
    static Icon home = Icon(Icons.home);
    static Icon notis = Icon(Icons.notifications);
    static Icon myList = Icon(Icons.list, size: 30,);
+   static Icon forward = Icon(Icons.arrow_forward_ios);
  }
