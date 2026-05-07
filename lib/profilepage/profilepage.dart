@@ -38,7 +38,7 @@ class ProfilePage extends StatelessWidget {
                         child: Text("Upload CV"),
                       ),
                       Spacer(),
-                      Icon(Icons.arrow_forward_ios)
+                      MyIcons.forward
                     ],
                   ),
                 ),
