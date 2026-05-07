@@ -28,14 +28,19 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: Text("CV"),
               ),
-              Card(
-                child: Row(
-                  children: [
-                    TextButton(
-                      onPressed: (){},
-                      child: Text("Upload CV"),
-                    )
-                  ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                  child: Row(
+                    children: [
+                      TextButton(
+                        onPressed: (){},
+                        child: Text("Upload CV"),
+                      ),
+                      Spacer(),
+                      Icon(Icons.arrow_forward_ios)
+                    ],
+                  ),
                 ),
               )
             ],
