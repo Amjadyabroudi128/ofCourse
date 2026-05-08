@@ -57,7 +57,17 @@ class ProfilePage extends StatelessWidget {
                           MyIcons.forward
                         ],
                       ),
-
+                      Divider(),
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: (){},
+                            child: Text("My Preference"),
+                          ),
+                          Spacer(),
+                          MyIcons.forward
+                        ],
+                      ),
                     ],
                   ),
                 ),
