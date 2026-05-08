@@ -22,16 +22,13 @@ class ProfilePage extends StatelessWidget {
       ),
       body: Center(
         child: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: .start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text("CV"),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: MyCard(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: .start,
+              children: [
+                Text("CV"),
+                MyCard(
                   child: Row(
                     children: [
                       TextButton(
@@ -43,8 +40,29 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
-            ],
+                SizedBox(height: 9,),
+
+                Text("Improve my job matches"),
+                SizedBox(height: 9,),
+                MyCard(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          TextButton(
+                            onPressed: (){},
+                            child: Text("My Qualifications"),
+                          ),
+                          Spacer(),
+                          MyIcons.forward
+                        ],
+                      ),
+
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
