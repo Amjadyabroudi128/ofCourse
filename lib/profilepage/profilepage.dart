@@ -74,34 +74,37 @@ class ProfilePage extends StatelessWidget {
               Text("Improve my job matches", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[600])),
               SizedBox(height: 6),
               MyCard(
-                child: Column(
-                  children: [
-                    GestureDetector(
-                      onTap: () {},
-                      child: Row(
-                        children: [
-                          Icon(Icons.school_outlined, color: MyColors.appBar),
-                          SizedBox(width: 8),
-                          Text("My Qualifications", style: TextStyle(fontSize: 15)),
-                          Spacer(),
-                          MyIcons.forward,
-                        ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: Column(
+                    children: [
+                      GestureDetector(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Icon(Icons.school_outlined, color: MyColors.appBar),
+                            SizedBox(width: 8),
+                            Text("My Qualifications", style: TextStyle(fontSize: 15)),
+                            Spacer(),
+                            MyIcons.forward,
+                          ],
+                        ),
                       ),
-                    ),
-                    Divider(),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Row(
-                        children: [
-                          Icon(Icons.tune_outlined, color: MyColors.appBar),
-                          SizedBox(width: 8),
-                          Text("My Preferences", style: TextStyle(fontSize: 15)),
-                          Spacer(),
-                          MyIcons.forward,
-                        ],
+                      Divider(),
+                      GestureDetector(
+                        onTap: () {},
+                        child: Row(
+                          children: [
+                            Icon(Icons.tune_outlined, color: MyColors.appBar),
+                            SizedBox(width: 8),
+                            Text("My Preferences", style: TextStyle(fontSize: 15)),
+                            Spacer(),
+                            MyIcons.forward,
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],
