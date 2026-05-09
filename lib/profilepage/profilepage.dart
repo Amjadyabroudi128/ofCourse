@@ -82,7 +82,7 @@ class ProfilePage extends StatelessWidget {
                         onTap: () {},
                         child: Row(
                           children: [
-                            Icon(Icons.school_outlined, color: MyColors.appBar),
+                            MyIcons.qualifications,
                             SizedBox(width: 8),
                             Text("My Qualifications", style: TextStyle(fontSize: 15)),
                             Spacer(),
