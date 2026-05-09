@@ -57,7 +57,7 @@ class ProfilePage extends StatelessWidget {
               MyCard(
                 child: Row(
                   children: [
-                    Icon(Icons.upload_file_outlined, color: MyColors.appBar),
+                    MyIcons.file,
                     SizedBox(width: 8),
                     TextButton(
                       onPressed: () {},
