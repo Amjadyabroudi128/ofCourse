@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ofcourse/components/card.dart';
 import 'package:ofcourse/core/appIcons.dart';
 import 'package:ofcourse/core/colors.dart';
+import 'package:ofcourse/core/textstyles.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -71,7 +72,7 @@ class ProfilePage extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              Text("Improve my job matches", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[600])),
+              Text("Improve my job matches", style: MyStyles.matches),
               SizedBox(height: 6),
               MyCard(
                 child: Padding(
