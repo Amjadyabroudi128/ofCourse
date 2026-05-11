@@ -96,7 +96,7 @@ class ProfilePage extends StatelessWidget {
                         onTap: () {},
                         child: Row(
                           children: [
-                            Icon(Icons.tune_outlined, color: MyColors.appBar),
+                            MyIcons.tune,
                             SizedBox(width: 8),
                             Text("My Preferences", style: TextStyle(fontSize: 15)),
                             Spacer(),
