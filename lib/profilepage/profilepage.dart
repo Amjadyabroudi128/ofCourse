@@ -75,7 +75,7 @@ class ProfilePage extends StatelessWidget {
               SizedBox(height: 6),
               MyCard(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  padding: const .symmetric(vertical: 12),
                   child: Column(
                     children: [
                       GestureDetector(
