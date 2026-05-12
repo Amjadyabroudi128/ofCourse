@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ofcourse/components/SizeBox.dart';
 import 'package:ofcourse/components/card.dart';
 import 'package:ofcourse/core/appIcons.dart';
 import 'package:ofcourse/core/colors.dart';
@@ -97,7 +98,7 @@ class ProfilePage extends StatelessWidget {
                         child: Row(
                           children: [
                             MyIcons.tune,
-                            SizedBox(width: 8),
+                            MyBox(width: 8),
                             Text("My Preferences", style: TextStyle(fontSize: 15)),
                             Spacer(),
                             MyIcons.forward,
