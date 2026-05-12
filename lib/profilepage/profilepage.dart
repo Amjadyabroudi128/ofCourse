@@ -85,7 +85,7 @@ class ProfilePage extends StatelessWidget {
                         child: Row(
                           children: [
                             MyIcons.qualifications,
-                            SizedBox(width: 8),
+                            MyBox(width: 8),
                             Text("My Qualifications", style: TextStyle(fontSize: 15)),
                             Spacer(),
                             MyIcons.forward,
