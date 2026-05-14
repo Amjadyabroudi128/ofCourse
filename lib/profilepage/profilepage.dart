@@ -60,7 +60,7 @@ class ProfilePage extends StatelessWidget {
                 child: Row(
                   children: [
                     MyIcons.file,
-                    SizedBox(width: 8),
+                    MyBox(width: 8),
                     TextButton(
                       onPressed: () {},
                       child: Text("Upload CV"),
