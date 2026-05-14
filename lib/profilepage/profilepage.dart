@@ -54,7 +54,7 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
 
-              Text("CV", style: TextStyle(fontWeight: FontWeight.w600, color: Colors.grey[600])),
+              Text("CV", style: MyStyles.matches),
               MyBox(height: 6),
               MyCard(
                 child: Row(
