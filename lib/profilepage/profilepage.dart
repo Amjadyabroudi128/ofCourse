@@ -74,7 +74,7 @@ class ProfilePage extends StatelessWidget {
               SizedBox(height: 20),
 
               Text("Improve my job matches", style: MyStyles.matches),
-              SizedBox(height: 6),
+              MyBox(height: 6),
               MyCard(
                 child: Padding(
                   padding: const .symmetric(vertical: 12),
